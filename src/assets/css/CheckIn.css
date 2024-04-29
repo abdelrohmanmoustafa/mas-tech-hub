@@ -1,0 +1,33 @@
+.CheckIn {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.CheckIn form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .CheckIn {
+      padding: 10px;
+  }
+
+  .CheckIn form {
+      flex-direction: column;
+  }
+}
+
+/*Adjust table for smaller screens*/
+@media screen and (max-width: 600px) {
+  .CheckIn table {
+      width: 100%;
+      display: block;
+  }
+
+  .CheckIn table th, .CheckIn table td {
+      display: block;
+      width: 100%;
+  }
+}

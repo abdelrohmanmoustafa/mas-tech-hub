@@ -1,0 +1,23 @@
+.App {
+    display: flex;
+    height: 100vh; /* Ensure the app fills the viewport height */
+    overflow: hidden; /* Prevent unwanted scrolling */ }
+  
+  .App > div:last-child {
+    flex: 1;
+    padding: 20px; /* Space around content */
+    overflow-y: auto; /* Allow scroll on content only */ 
+}
+
+.contentArea {
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .contentArea {
+      padding: 10px;
+  }
+}

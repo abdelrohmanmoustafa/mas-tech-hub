@@ -1,0 +1,23 @@
+.OperationsTab {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .OperationsTab {
+        padding: 10px;
+    }
+}
+
+/*Table in smaller screens*/
+@media screen and (max-width: 600px) {
+    .OperationsTab table {
+        width: 100%;
+        display: block;
+    }
+
+    .OperationsTab table th, .OperationsTab table td {
+        display: block;
+        width: 100%;
+    }
+}
