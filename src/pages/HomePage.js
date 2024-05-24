@@ -16,20 +16,20 @@ const HomePage = () => {
   };
 
   // Example: Adjust the path and method of importing images as needed.
-  const images = require.context('../assets/images/home-page-slide-show', true, /\.jpg$/).keys().map((path) => require.context('../assets/images/home-page-slide-show', true)(path));
+  // const images = require.context('../assets/images/home-page-slide-show', true, /\.jpg$/).keys().map((path) => require.context('../assets/images/home-page-slide-show', true)(path));
 
-  return (
-    <div className="home-page">
-      <h1 className="header">MAS-VOLUNTEER-TECH-HUB</h1>
-      <Slider {...settings}>
-        {images.map((img, index) => (
-          <div key={index}>
-            <img className="half-screen-image" src={img} alt={`Slide ${index + 1}`} />
-          </div>
-        ))}
-      </Slider>
-    </div>
-  );
+  // return (
+  //   <div className="home-page">
+  //     <h1 className="header">MAS-VOLUNTEER-TECH-HUB</h1>
+  //     <Slider {...settings}>
+  //       {images.map((img, index) => (
+  //         <div key={index}>
+  //           <img className="half-screen-image" src={img} alt={`Slide ${index + 1}`} />
+  //         </div>
+  //       ))}
+  //     </Slider>
+  //   </div>
+  // );
 };
 
 export default HomePage;
